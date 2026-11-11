@@ -1,6 +1,6 @@
 # Junction Lab display
 
-A dark, responsive, single-page companion to the PN junction lab. Vanilla HTML/CSS, original SVG illustrations, and local QR assets. The forest backdrop is an original generated image, optimized as `assets/woodland.webp`; the dark cards use a translucent surface over it. The two cards form an alternating horizontal layout: laboratory diagram on the left in the top card, AR diagram on the right in the bottom card, with QR descriptions underneath each code. On phones, each card stacks its diagram above its QR. No runtime dependencies or build step; suitable for GitHub Pages.
+A dark, responsive, single-page companion to the PN junction lab. Vanilla HTML/CSS, original SVG illustrations, and local QR assets. The forest backdrop is an original generated image, optimized as `assets/woodland.webp`; the dark cards use a translucent surface over it. The two cards form an alternating horizontal layout: laboratory diagram on the left in the top card, AR diagram on the right in the bottom card, with QR descriptions underneath each code. On phones, each card stacks its diagram above its QR. The diagrams bob gently, with animated desktop traces and AR projection guides; system reduced-motion settings disable the animations. No runtime dependencies or build step; suitable for GitHub Pages.
 
 ## Run
 
