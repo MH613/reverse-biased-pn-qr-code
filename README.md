@@ -46,4 +46,4 @@ npm ci --cache /tmp/pn-npm-cache
 npm test
 ```
 
-Browser tests cover laptop, landscape tablet, portrait tablet, and phone layouts, loaded QR images, and the web destination. The configuration uses Chromium at `/usr/bin/chromium`; adjust `executablePath` for a different machine. No external fonts, images, or scripts are needed at runtime.
+Browser tests cover laptop, landscape tablet, portrait tablet, and phone layouts, loaded QR images, and the web destination. The configuration uses Chromium at `/usr/bin/chromium`; adjust `executablePath` for a different machine. Manrope is self-hosted in `assets/fonts` (Fontsource 5.3.0, SIL Open Font License included). No external fonts, images, or scripts are needed at runtime.
