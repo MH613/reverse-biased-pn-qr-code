@@ -19,6 +19,7 @@ for (const [name, width, height] of [['laptop', 1440, 900], ['tablet', 1024, 768
     const cards = await page.locator('.card').evaluateAll(nodes => nodes.map(n => ({ x: n.offsetLeft, y: n.offsetTop })));
     expect(width > 580 ? cards[0].y === cards[1].y : cards[1].y > cards[0].y).toBe(true);
     await expect(page.getByRole('link', { name: 'Open the interactive web laboratory' })).toHaveAttribute('href', 'https://mh613.github.io/reverse-biased-pn/');
+    await expect(page.getByRole('link', { name: 'Open the AR simulation' })).toHaveAttribute('href', 'https://mh613.github.io/reverse-biased-pn/teammate/xr/ar.html');
     if (name === 'laptop') await page.screenshot({ path: '/tmp/pn-laptop.png', fullPage: true });
     if (name === 'phone') await page.screenshot({ path: '/tmp/pn-phone.png', fullPage: true });
   });

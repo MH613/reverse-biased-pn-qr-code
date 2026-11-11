@@ -24,18 +24,16 @@ Published address: https://mh613.github.io/reverse-biased-pn-qr-code/
 
 The web QR already encodes https://mh613.github.io/reverse-biased-pn/.
 
-The AR QR is explicitly marked **PREVIEW CODE** and currently encodes https://example.com/ar-placeholder. It does not launch a simulation.
+The AR QR encodes https://mh613.github.io/reverse-biased-pn/teammate/xr/ar.html. Both codes also act as clickable links.
 
-To use your supplied AR QR image, save the original as `assets/ar-qr.png`, change the AR image `src` in `index.html` to that path, update its alt text, and remove the `PREVIEW CODE` span and `placeholder` class. Keep a white quiet zone around the QR. The chat image was visible but was not available as a filesystem attachment during implementation.
-
-Alternatively, scan your image with a phone and copy the destination URL. Generate a crisp SVG with:
+To regenerate both QR assets with their current destinations:
 
 ```sh
 npm ci --cache /tmp/pn-npm-cache
-AR_URL='https://your-real-ar-url' npm run generate:qr
+npm run generate:qr
 ```
 
-Then remove the preview span/class and update the AR alt text in `index.html`. If desired, wrap the AR QR in an anchor to that destination, like the web QR. Regenerating without `AR_URL` resets the AR QR to the placeholder. Check generated codes with a phone before exhibition use.
+To change the AR destination, update the default in `scripts/generate-qr.cjs` and the AR link in `index.html`, then regenerate. `AR_URL` can override the destination for a single generation. Check generated codes with a phone before exhibition use.
 
 If the AR simulation needs a particular marker, provide its image or link separately. Neither QR on this page is an AR tracking marker. The introductory AR instructions assume a marker-based experience and should be confirmed against the real simulation.
 
