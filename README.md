@@ -1,6 +1,6 @@
 # Junction Lab display
 
-A dark, responsive, single-page companion to the PN junction lab. Vanilla HTML/CSS, original SVG illustrations, and local QR assets. No runtime dependencies or build step; suitable for GitHub Pages.
+A dark, responsive, single-page companion to the PN junction lab. Vanilla HTML/CSS, original SVG illustrations, and local QR assets. The forest backdrop is an original generated image, optimized as `assets/woodland.webp`; the dark cards use a translucent surface over it. No runtime dependencies or build step; suitable for GitHub Pages.
 
 ## Run
 
