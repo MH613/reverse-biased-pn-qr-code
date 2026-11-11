@@ -1,0 +1,27 @@
+{
+  "name": "reverse-biased-pn-qr-code",
+  "version": "1.0.0",
+  "description": "A responsive display for the PN junction web laboratory and AR experience",
+  "scripts": {
+    "start": "python3 -m http.server 5173 --bind 0.0.0.0",
+    "generate:qr": "node scripts/generate-qr.cjs",
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MH613/reverse-biased-pn-qr-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MH613/reverse-biased-pn-qr-code/issues"
+  },
+  "homepage": "https://github.com/MH613/reverse-biased-pn-qr-code#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "qrcode": "^1.5.4"
+  },
+  "private": true
+}
