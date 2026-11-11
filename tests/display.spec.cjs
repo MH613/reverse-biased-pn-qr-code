@@ -3,7 +3,8 @@ for (const [name, width, height] of [['laptop', 1440, 900], ['tablet', 1024, 768
   test(`${name}: cards, QR assets and responsive layout`, async ({ page }) => {
     await page.setViewportSize({ width, height });
     await page.goto('/');
-    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByRole('heading')).toHaveCount(0);
+    await expect(page.locator('header, footer, .intro, .how-to')).toHaveCount(0);
     await expect(page.locator('.card')).toHaveCount(2);
     for (const image of await page.locator('.qr-link img').all()) {
       expect(await image.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
