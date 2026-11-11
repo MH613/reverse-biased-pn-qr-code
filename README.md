@@ -10,7 +10,15 @@ From this repository:
 npm start
 ```
 
-Serve on port 5173. Alternatively, use any static web server. Publish the repository root with GitHub Pages to host it.
+Serve on port 5173. Alternatively, use any static web server.
+
+## Publish
+
+The `Deploy to GitHub Pages` workflow publishes the static page on pushes to `main` and supports manual runs from the Actions tab. It uploads only the HTML, CSS, and assets; no dependency install or build is required.
+
+In repository Settings → Pages → Build and deployment, select **GitHub Actions** as the source. If the initial run failed before this was configured, rerun it from the Actions tab.
+
+Published address: https://mh613.github.io/reverse-biased-pn-qr-code/
 
 ## QR codes
 
