@@ -21,6 +21,8 @@
   "homepage": "https://github.com/MH613/reverse-biased-pn-qr-code#readme",
   "devDependencies": {
     "@playwright/test": "^1.65.0",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0",
     "qrcode": "^1.5.4"
   },
   "private": true

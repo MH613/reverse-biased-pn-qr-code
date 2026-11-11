@@ -6,7 +6,7 @@ const arUrl = process.env.AR_URL || 'https://mh613.github.io/reverse-biased-pn/t
   for (const [name, url] of [['web', webUrl], ['ar', arUrl]]) {
     if (!/^https:\/\//.test(url)) throw new Error('QR destinations must use HTTPS');
     await fs.writeFile(`assets/${name}-qr.svg`, await QRCode.toString(url, {
-      type: 'svg', errorCorrectionLevel: 'M', margin: 4, color: { dark: '#141713', light: '#ffffff' }
+      type: 'svg', errorCorrectionLevel: 'M', margin: 4, color: { dark: '#e7eadc', light: '#00000000' }
     }));
   }
 })();
